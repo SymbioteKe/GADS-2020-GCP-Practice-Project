@@ -8,7 +8,7 @@ For each lab, you get a new GCP project and set of resources for a fixed time at
 
 2. Note the lab's access time (for example,![alt text](https://cdn.qwiklabs.com/aZQJ4BT7uCmM9XR6BTXgTRP1Hfu1T7q6V%2BcnbdEsbpU%3D)and make sure you can finish in that time block.
 
-There is no pause feature. You can restart if needed, but you have to start at the beginning.
+   There is no pause feature. You can restart if needed, but you have to start at the beginning.
 
 3. When ready, click ![alt text](https://cdn.qwiklabs.com/XE8x7uvQokyubNwnYKKc%2BvBBNrMlo5iNZiDDzQQ3Ddo%3D)
 
@@ -18,7 +18,8 @@ There is no pause feature. You can restart if needed, but you have to start at t
 
 6. Click **Use another account** and copy/paste credentials for **this** lab into the prompts.
 
-If you use other credentials, you'll get errors or **incur charges**.
+   If you use other credentials, you'll get errors or **incur charges**.
 
-7. Accept the terms and skip the recovery resource page.
+7. Accept the terms and skip the recovery resource page.  
+
 Do not click **End Lab** unless you are finished with the lab or want to restart it. This clears your work and removes the project.
