@@ -135,7 +135,11 @@ To initialize the lab: [**Task 1: Sign in to the Google Cloud Platform (GCP) Con
 
     The response will again be the HTML source of the web server's home page, including your line of custom text.
 
-13. In the **Navigation menu**(![alt text](https://cdn.qwiklabs.com/LyLHJ5I3gtYdRN1pHDZ2JK2vbd1sM6W2viT0OzyRPTs%3D)), click **Compute Engine > VM instances**.
+13. To displays all Google Compute Engine instances in the project, execute the following command:  
+
+   `gcloud compute instances list`  
+
+   You will see the VM instances you have in the project.
 
 14. Copy the External IP address for **my-vm-1** and paste it into the address bar of a new browser tab. You will see your web server's home page, including your custom text.
 
