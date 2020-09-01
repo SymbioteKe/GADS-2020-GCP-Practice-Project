@@ -137,9 +137,9 @@ To initialize the lab: [**Task 1: Sign in to the Google Cloud Platform (GCP) Con
 
 13. To displays all Google Compute Engine instances in the project, execute the following command:  
 
-   `gcloud compute instances list`  
+    `gcloud compute instances list`  
 
-   You will see the VM instances you have in the project.
+    You will see the VM instances you have in the project.
 
 14. Copy the External IP address for **my-vm-1** and paste it into the address bar of a new browser tab. You will see your web server's home page, including your custom text.
 
