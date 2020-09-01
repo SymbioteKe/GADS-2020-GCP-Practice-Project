@@ -119,9 +119,9 @@ To initialize the lab: [**Task 1: Sign in to the Google Cloud Platform (GCP) Con
 
 10. Confirm that the web server is serving your new page. At the command prompt on **my-vm-1**, execute this command:  
 
-   `curl http://localhost/`
+    `curl http://localhost/`  
 
-   The response will be the HTML source of the web server's home page, including your line of custom text.
+    The response will be the HTML source of the web server's home page, including your line of custom text.
 
 11. To exit the command prompt on **my-vm-1**, execute this command:  
 
