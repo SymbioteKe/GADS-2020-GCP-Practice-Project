@@ -32,11 +32,7 @@ To initialize the lab: [**Task 1: Sign in to the Google Cloud Platform (GCP) Con
 
 6. To create a VM instance called **my-vm-1** in that zone, execute this command:  
 
-   `gcloud compute instances create "my-vm-1" \  
-   --machine-type "n1-standard-1" \  
-   --image-project "debian-cloud" \  
-   --image "debian-9-stretch-v20190213" \  
-   --subnet "default"`  
+   `gcloud compute instances create "my-vm-1" \--machine-type "n1-standard-1" \--image-project "debian-cloud" \--image "debian-9-stretch-v20190514" \--subnet "default"`  
 
    **Note**: The VM can take about two minutes to launch and be fully available for use.
 
@@ -60,15 +56,11 @@ To initialize the lab: [**Task 1: Sign in to the Google Cloud Platform (GCP) Con
 
    Your completed command will look like this:  
 
-   `gcloud config set compute/zone us-central1-a`
+   `gcloud config set compute/zone us-central1-b`
 
 4. To create a VM instance called **my-vm-2** in that zone, execute this command:  
 
-   `gcloud compute instances create "my-vm-2" \  
-   --machine-type "n1-standard-1" \  
-   --image-project "debian-cloud" \  
-   --image "debian-9-stretch-v20190213" \  
-   --subnet "default"`  
+   `gcloud compute instances create "my-vm-2" \--machine-type "n1-standard-1" \--image-project "debian-cloud" \--image "debian-9-stretch-v20190514" \--subnet "default"`  
 
    **Note**: The VM can take about two minutes to launch and be fully available for use.
 
