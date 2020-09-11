@@ -57,30 +57,46 @@ To initialize the lab: [**Task 1: Sign in to the Google Cloud Platform (GCP) Con
 
 ## Task 3: Create a Cloud Storage bucket using the gsutil command line
 
-1. For convenience, enter your chosen location into an environment variable called LOCATION. Enter one of these commands:
+1. For convenience, enter your chosen location into an environment variable called LOCATION. Enter one of these commands:  
 
-export LOCATION=US
+`export LOCATION=US`
 
-Or
+Or  
 
-export LOCATION=EU
+`export LOCATION=EU`
 
-Or
+Or  
 
-export LOCATION=ASIA
+`export LOCATION=ASIA`
 
-2. In Cloud Shell, the DEVSHELL_PROJECT_ID environment variable contains your project ID. Enter this command to make a bucket named after your project ID:
+2. In Cloud Shell, the DEVSHELL_PROJECT_ID environment variable contains your project ID. Enter this command to make a bucket named after your project ID:  
 
-gsutil mb -l $LOCATION gs://$DEVSHELL_PROJECT_ID
+`gsutil mb -l $LOCATION gs://$DEVSHELL_PROJECT_ID`
 
 3. Retrieve a banner image from a publicly accessible Cloud Storage location:
 
-gsutil cp gs://cloud-training/gcpfci/my-excellent-blog.png my-excellent-blog.png
+`gsutil cp gs://cloud-training/gcpfci/my-excellent-blog.png my-excellent-blog.png`
 
 4. Copy the banner image to your newly created Cloud Storage bucket:
 
-gsutil cp my-excellent-blog.png gs://$DEVSHELL_PROJECT_ID/my-excellent-blog.png
+`gsutil cp my-excellent-blog.png gs://$DEVSHELL_PROJECT_ID/my-excellent-blog.png`
 
 5. Modify the Access Control List of the object you just created so that it is readable by everyone:
 
-gsutil acl ch -u allUsers:R gs://$DEVSHELL_PROJECT_ID/my-excellent-blog.png
+`gsutil acl ch -u allUsers:R gs://$DEVSHELL_PROJECT_ID/my-excellent-blog.png`
+
+## Task 4: Create the Cloud SQL instance
+
+1. Show the list of potential machine types:  
+
+   `gcloud sql tiers list`
+
+Note the values that begin with `db-`. You must choose one of these values to create a Second Generation instance.
+
+2. Create the instance:
+   `gcloud sql instances create blog-db --tier=db-n1-standard-1 --region=us-central1`
+
+3. Note the automatically assigned IP address.
+
+4. Set the password for the "root@%" MySQL user:
+`gcloud sql users set-password root --host=% --instance blog-db --password [PASSWORD]`
