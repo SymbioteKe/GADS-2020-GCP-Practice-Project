@@ -24,7 +24,7 @@ To initialize the lab: [**Task 1: Sign in to the Google Cloud Platform (GCP) Con
 
 4. Choose the zone assigned by Qwiklabs
 
-5. To set your default zone to the one you just chose, enter this partial command gcloud config set compute/zone followed by the zone you chose.
+5. To set your default zone to the one you just chose, enter this partial command `gcloud config set compute/zone` followed by the zone you chose.
 
    Your completed command will look like this:  
 
