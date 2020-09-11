@@ -5,6 +5,6 @@
 ### Description
 
 Included are:
-- 4 hands-on labs on Qwiklabs evidenced by Screenshots of emails received upon completion.
-- 1 hands-on lab *translated* from console instructions to 100% command line instructions.
+- 7 hands-on labs on Qwiklabs evidenced by Screenshots of emails received upon completion.
+- 2 hands-on labs *translated* from console instructions to 100% command line instructions.
 so far.
